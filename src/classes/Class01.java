@@ -8,6 +8,7 @@ public class Class01 {
         int a = 10;
         if (a == 10)
             a = 12;
+        System.out.println("Hello World");
     }
 
     // 编译: javac Class01.java
