@@ -195,7 +195,7 @@ class WhichDay {
         for (int i = 1; i < days.length; i++) {
             days[i] += days[i - 1];
         }
-        System.out.println("这是" + year + "年的第" + (days[month-1] + day) + "天");
+        System.out.println("这是" + year + "年的第" + (days[month - 1] + day) + "天");
     }
 }
 
@@ -213,7 +213,7 @@ class WhichDaySwitch {
         if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
             flag = true;
         }
-        switch(month){
+        switch (month) {
             case 12:
                 days += 30;
             case 11:
@@ -250,50 +250,50 @@ class WhichDaySwitch {
     }
 }
 
-class PrintStar{
+class PrintStar {
     public static void main(String[] args) {
-        Scanner scanner= new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int starLine = scanner.nextInt();
-        for(int i = 0; i < starLine; i ++){
+        for (int i = 0; i < starLine; i++) {
             System.out.println("*****");
         }
 
-        for(int i = 0; i < starLine; i++){
-            for(int j = 0; j <= i; j ++){
+        for (int i = 0; i < starLine; i++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print("*");
             }
             System.out.println("");
         }
 
-        for(int i = 0; i < starLine; i++){
-            for(int j = 0; j <= starLine - i - 1; j++){
+        for (int i = 0; i < starLine; i++) {
+            for (int j = 0; j <= starLine - i - 1; j++) {
                 System.out.print("*");
             }
             System.out.println("");
         }
 
 
-        for(int i = 0; i < starLine; i++){
-            for(int j = 0; j < starLine - i ; j++){
+        for (int i = 0; i < starLine; i++) {
+            for (int j = 0; j < starLine - i; j++) {
                 System.out.print(" ");
             }
-            for(int j = 0; j <= i; j ++){
+            for (int j = 0; j <= i; j++) {
                 System.out.print("*");
             }
-            for(int j = 0; j <= i-1; j ++){
+            for (int j = 0; j <= i - 1; j++) {
                 System.out.print("*");
             }
             System.out.println("");
         }
 
-        for(int i = 0; i < starLine-1; i++){
-            for(int j = 0; j <= i + 1; j++){
+        for (int i = 0; i < starLine - 1; i++) {
+            for (int j = 0; j <= i + 1; j++) {
                 System.out.print(" ");
             }
-            for(int j = 0; j <= starLine - i - 2; j++){
+            for (int j = 0; j <= starLine - i - 2; j++) {
                 System.out.print("*");
             }
-            for(int j = 0; j <= starLine - i - 3; j++){
+            for (int j = 0; j <= starLine - i - 3; j++) {
                 System.out.print("*");
             }
             System.out.println("");
@@ -301,38 +301,38 @@ class PrintStar{
     }
 }
 
-class MulTable{
+class MulTable {
     public static void main(String[] args) {
-        for(int i = 1; i <= 9; i++){
-            for(int j = 1; j <= i; j++){
-                System.out.print(i + " * " + j + " = " + i*j + " ");
+        for (int i = 1; i <= 9; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i + " * " + j + " = " + i * j + " ");
             }
             System.out.println();
         }
     }
 }
 
-class AllPrime{
+class AllPrime {
     public static void main(String[] args) {
         boolean flag = false;
-        for(int i = 2; i < 100; i++){
+        for (int i = 2; i < 100; i++) {
             flag = false;
-            for(int j = 2; j <= i / 2; j++){
-                if(i %j == 0){
+            for (int j = 2; j <= i / 2; j++) {
+                if (i % j == 0) {
                     flag = true;
                     break;
                 }
             }
-            if(! flag)
+            if (!flag)
                 System.out.print(i + " ");
         }
     }
 }
 
-class thirteenDivision{
+class thirteenDivision {
     public static void main(String[] args) {
-        for (int i = 1;i <= 100 ;i++ ) {
-            if(i % 13 == 0){
+        for (int i = 1; i <= 100; i++) {
+            if (i % 13 == 0) {
                 System.out.println(i);
                 continue;
             }
@@ -340,19 +340,19 @@ class thirteenDivision{
     }
 }
 
-class ScannerInputNumber{
+class ScannerInputNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num;
         int positive = 0;
         int minus = 0;
-        while(true){
+        while (true) {
             num = scanner.nextInt();
-            if (num > 0){
+            if (num > 0) {
                 positive += 1;
-            } else if(num < 0){
+            } else if (num < 0) {
                 minus += 1;
-            } else{
+            } else {
                 break;
             }
         }

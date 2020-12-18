@@ -2,15 +2,17 @@ package classes;
 
 public class StaticValue {
     public static int a = 10;
-    public static void printHello(){
+
+    public static void printHello() {
         System.out.println(a);
     }
-    public StaticValue(){
+
+    public StaticValue() {
         a += 1;
     }
 }
 
-class StaticTest{
+class StaticTest {
     public static void main(String[] args) {
         StaticValue.a = 100;
         StaticValue staticValue = new StaticValue();

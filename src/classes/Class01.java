@@ -114,7 +114,7 @@ class FLowerWhileNoLimit {
         for (int i = 1; i <= 1000000000; i++) {
             int temp = i;
             int times = 0;
-            while(temp > 0){
+            while (temp > 0) {
                 temp /= 10;
                 times += 1;
             }
@@ -123,7 +123,7 @@ class FLowerWhileNoLimit {
             while (temp > 0) {
                 int realTimes = times;
                 int mul = 1;
-                while(realTimes-- > 0){
+                while (realTimes-- > 0) {
                     mul *= (temp % 10);
                 }
                 sum += mul;
@@ -136,30 +136,30 @@ class FLowerWhileNoLimit {
     }
 }
 
-class WhileFor{
+class WhileFor {
     public static void main(String[] args) {
         int sum = 0;
-        for (int i = 0; i <= 100; i++){
+        for (int i = 0; i <= 100; i++) {
             if (i % 2 == 0)
                 sum += i;
         }
         System.out.println(sum);
         int i = 0;
         sum = 0;
-        while(i <= 100){
-            if(i % 2 == 0){
+        while (i <= 100) {
+            if (i % 2 == 0) {
                 sum += i;
             }
-            i ++;
+            i++;
         }
         System.out.println(sum);
         i = 0;
         sum = 0;
-        do{
-            if(i % 2 == 0)
+        do {
+            if (i % 2 == 0)
                 sum += i;
             i += 1;
-        } while(i <= 100);
+        } while (i <= 100);
         System.out.println(sum);
     }
 
