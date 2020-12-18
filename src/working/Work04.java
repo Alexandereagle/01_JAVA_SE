@@ -101,7 +101,7 @@ class homeworkTest04 {
     }
 }
 
-class HomeworkTest005 {
+class HomeworkTest006 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("请输入年:");
@@ -143,55 +143,15 @@ class HomeworkTest005 {
             default:
                 System.out.println("错误的月份");
         }
-        System.out.println(year + "年的第" + sumDays);
-    }
-}
-
-class HomeworkTest006 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("请输入年:");
-        int year = scanner.nextInt();
-        System.out.print("请输入月:");
-        int month = scanner.nextInt();
-        System.out.print("请输入日:");
-        int day = scanner.nextInt();
-        int sumDays = 0;
+        year--;
         while (year >= 2000) {
+            if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))
+                sumDays += 366;
+            else
+                sumDays += 365;
             year -= 1;
-            switch (month) {
-                case 12:
-                    sumDays += 30;
-                case 11:
-                    sumDays += 31;
-                case 10:
-                    sumDays += 30;
-                case 9:
-                    sumDays += 31;
-                case 8:
-                    sumDays += 31;
-                case 7:
-                    sumDays += 30;
-                case 6:
-                    sumDays += 31;
-                case 5:
-                    sumDays += 30;
-                case 4:
-                    sumDays += 31;
-                case 3:
-                    if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))
-                        sumDays += 29;
-                    else
-                        sumDays += 28;
-                case 2:
-                    sumDays += 31;
-                case 1:
-                    sumDays += day;
-                    break;
-                default:
-                    System.out.println("错误的月份");
-            }
         }
+        System.out.println(sumDays);
         switch (sumDays % 5) {
             case 1:
             case 2:
