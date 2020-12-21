@@ -3,6 +3,9 @@ package classes;
 import java.util.Scanner;
 
 public class Class05 {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
 }
 
 
@@ -25,6 +28,13 @@ class PrintPrime {
 }
 
 class SumTwo {
+
+    public static void main(String[] args) {
+        System.out.println(sumTwoNumber(1, 2));
+        System.out.println(sumTwoNumber(1L, 2));
+        System.out.println(sumTwoNumber(2.3, 3.4));
+        System.out.println(sumTwoNumber("a", "b"));
+    }
 
     public static int sumTwoNumber(int i, int j) {
         return i + j;
