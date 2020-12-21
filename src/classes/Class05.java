@@ -185,11 +185,10 @@ class TestNum1 {
 }
 
 class Circle {
-    private final double PI = 3.14159265357939788292;
     public double radius;
 
     public double findArea() {
-        return radius * radius * PI;
+        return Math.PI * radius * radius;
     }
 }
 
