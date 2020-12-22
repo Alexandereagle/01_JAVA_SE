@@ -1,5 +1,9 @@
 package classes;
 
+/**
+ * @author: zhangzhen
+ * @version: 1.0
+ */
 public class Class01 {
     public static void main(String[] args) {
         printString();
@@ -9,6 +13,7 @@ public class Class01 {
         if (a == 10)
             a = 12;
         System.out.println("Hello World");
+
     }
 
     // 编译: javac Class01.java
