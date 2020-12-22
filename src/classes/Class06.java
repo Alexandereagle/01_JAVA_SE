@@ -300,6 +300,30 @@ class Room {
         this.houseAddress = houseAddress;
         getDetails();
     }
+
+    public double getHouseArea() {
+        return houseArea;
+    }
+
+    public int getHouseNo() {
+        return houseNo;
+    }
+
+    public void setHouseAddress(String houseAddress) {
+        this.houseAddress = houseAddress;
+    }
+
+    public void setHouseArea(double houseArea) {
+        this.houseArea = houseArea;
+    }
+
+    public void setHouseNo(int houseNo) {
+        this.houseNo = houseNo;
+    }
+
+    public String getHouseAddress() {
+        return houseAddress;
+    }
 }
 
 class TestRoom {
